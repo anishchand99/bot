@@ -1,0 +1,77 @@
+knex.insert({
+  first_name: firstName,
+  last_name: lastName,
+  email: email,
+  phone_number: phoneNumber
+})
+.returning('id')
+.into('person')
+.then(function (id) {
+  // use id here
+});
+
+
+
+CREATE TABLES:
+
+
+create table users (
+    visit_id serial not null unique primary key, 
+    header_info varchar(1200),
+    ip_info inet,
+    asn_prefix cidr,
+    as_name varchar(40),
+    start_time_stamp varchar(30),
+    end_time_stamp varchar(30),
+    start_time time with time zone,
+    end_time time with time zone,
+    start_date date,
+    end_date date	
+);
+
+create table PageUrl (
+    id serial not null unique primary key, 
+	page_url varchar(30) not null,
+    user_visit_id integer not null references users(visit_id)  	
+);
+
+create table MouseEvents (
+    id serial not null unique primary key, 
+    x smallint,
+	y smallint,
+	height smallint,
+	width smallint,
+	time_at_point bigint,
+	user_visit_id integer not null references users(visit_id),
+	page_id integer not null references pageurl(id)  	
+);
+
+
+create table KeyBoardEvents (
+    id serial not null unique primary key, 
+    key_pressed varchar(12),
+	dwellTime integer,
+	flightTime integer,
+	user_visit_id integer not null references users(visit_id),  	
+	page_id integer not null references pageurl(id)	
+);
+
+create table ClickEvents (
+    id serial not null unique primary key, 
+    x smallint,
+	y smallint,
+	height smallint,
+	width smallint,
+	user_visit_id integer not null references users(visit_id),  	
+	page_id integer not null references pageurl(id)	
+);
+
+
+
+DELETE TABLES:
+
+DROP table clickevents;
+drop table keyboardevents;
+drop table mouseevents;
+drop table pageurl;
+drop table users;
