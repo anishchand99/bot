@@ -1,0 +1,19 @@
+.container{
+	margin-top: auto;
+  	padding: 0px;
+  	margin-bottom: 20px;
+}
+.box{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px;
+	color: #000000;
+	background-color:rgba(00,145,170,1);
+	border-color:rgba(00,145,170,1);
+}
+
+::placeholder{
+	color: rgba(00,00,00,0.7);
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}

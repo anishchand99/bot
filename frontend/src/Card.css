@@ -1,0 +1,24 @@
+.Card{
+	background-color: black;
+	margin: 5px;
+	border-radius: 10px;
+	height: 55vh;
+}
+
+.Card:hover {
+	transform:scale(1.01);
+	box-shadow:rgba(0,0,0,0.9) 5px 5px 15px, inset rgba(0,0,0,0.1) 0px -10px 20px;
+}
+
+.Card img{
+	height: 45vh;
+	width: 100%;
+	border-radius: 5px 5px 0px 0px	;
+}
+
+.Card h3{
+	text-align: center;
+	font-family: Arial;
+	font-size: 20px;
+	color: rgba(0,255,255,1);
+}

@@ -1,0 +1,19 @@
+.captcha{
+	text-align: center;
+	margin: 50px;
+}
+.prompt{	
+	margin: 10px;
+	font-weight: bold;
+	font-size: 1.5vw;
+}
+.verifyImage img{
+	height:auto;
+	width:35vw;
+}
+.blank{
+	margin: 10px;
+}
+.submit{
+	margin: 10px;
+}

@@ -1,0 +1,10 @@
+.cardlist{
+	display:grid;
+	grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+	grid-gap: 7px;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.link{
+	text-decoration: none;
+}

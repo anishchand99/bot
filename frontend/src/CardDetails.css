@@ -1,0 +1,38 @@
+.DetailCard{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.DetailCard .movie{
+	display: block;
+	max-width: 95%;
+	max-height: 95%;	
+	background: rgba(0,0,0,1);
+	margin-left: auto;
+  	margin-right: auto;
+	position: relative;
+	border-radius: 0;
+}
+.DetailCard .play{
+	position: absolute;
+	left: 0; 
+	right: 0; 
+	top: 0;
+	bottom: 0;
+	display: block;
+	margin: auto;
+	max-width: 10%;
+	max-height: 20%;
+	transform: translate(-50%, -50%);
+}
+.DetailCard .credit{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-top: 25px;
+	display: flex;
+	justify-content: flex-end;
+	width: 25%;
+	color: white;
+	font-size: 12px;
+	margin-left: auto; 
+}

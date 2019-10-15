@@ -1,0 +1,31 @@
+.Summary{
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 500vh;
+	margin-top: 25px;
+	display:grid;
+	font-family: Arial;
+	grid-template-columns: 20% 80%;		
+	margin-bottom: 15px;
+}
+.Summary .poster{
+	max-width: 100%;
+	height: auto;
+	border: solid 2px ;
+}
+.Summary .row{
+	width: 100%;
+}
+.Summary .title{
+	width: 80%;
+	color: rgb(0,255,255);
+	margin:0px;
+	margin-left: 15px; 
+	font-size: 35px;
+}
+.Summary .review{
+	max-width: 80%;
+	margin-left: 15px; 
+	color: white;
+	font-size: 18px;
+}
